@@ -3,7 +3,7 @@
 # Goes into manifests/akka.pp
 
 
-class typesafe::akka ($version="2.1.0", $user="vagrant", $group="vagrant", $local_installer="false") {
+class typesafe::akka ($version="2.2.4", $user="vagrant", $group="vagrant", $local_installer="false") {
 	# Install akka
 	if $local_installer == "true" {
 		file { "/home/${user}/akka-${version}.zip":

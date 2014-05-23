@@ -2,7 +2,7 @@
 # Install Scala 2.10.0
 # Goes into manifests/scala.pp
 
-class typesafe::scala ($version="2.10.0", $local_installer="false") {
+class typesafe::scala ($version="2.10.4", $local_installer="false") {
 	# Install scala
 	if $local_installer == "true" {
 		file { "/usr/share/scala-${version}.tgz":

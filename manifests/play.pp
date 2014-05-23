@@ -2,7 +2,7 @@
 # Installs play framework
 # Goes into manifests/play.pp
 
-class typesafe::play ($version="2.1.0", $user="vagrant", $group="vagrant", $local_installer="false") {
+class typesafe::play ($version="2.2.2", $user="vagrant", $group="vagrant", $local_installer="false") {
 	# Install play
 	if $local_installer == "true" {
 		file { "/home/${user}/play-${version}.zip":
